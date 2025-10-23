@@ -1,4 +1,4 @@
-# Eghosa Akenbor Art Portfolio
+# Frederick Osarodion Art Portfolio
 
 A modern, high-performance portfolio website for contemporary African artist Eghosa Raymond Akenbor. Built with Next.js 15, TypeScript, and Tailwind CSS.
 
