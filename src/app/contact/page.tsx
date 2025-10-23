@@ -41,7 +41,7 @@ export default function Contact() {
             Get In Touch
           </h1>
           <p className="text-xl text-slate-600 fade-in-delay-1">
-            Let's discuss your next art project or collaboration
+            Let&apos;s discuss your next art project or collaboration
           </p>
         </div>
       </section>

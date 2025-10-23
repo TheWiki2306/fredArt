@@ -2,6 +2,7 @@ import { Navigation } from '@/components/Navigation'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const blogPosts = {
   'contemporary-african-art-evolution': {
@@ -94,18 +95,18 @@ export default async function BlogPost({ params }: PageProps) {
             />
 
             <div className="mt-12 flex justify-between">
-              <a
+              <Link
                 href="/blog"
                 className="inline-flex items-center px-6 py-3 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 rounded-lg hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
               >
                 ← Back to Blog
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contact"
                 className="inline-flex items-center px-6 py-3 gradient-accent text-white rounded-lg hover:gradient-accent-hover transition-all duration-200"
               >
                 Connect With Me →
-              </a>
+              </Link>
             </div>
           </div>
         </section>
