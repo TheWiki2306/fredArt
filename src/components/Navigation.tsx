@@ -51,28 +51,22 @@ export function Navigation() {
                   All Collections
                 </Link>
                 <Link
-                  href="/collections/lovers-tales"
+                  href="/collections/abstract-expressions"
                   className="block px-4 py-3 text-sm text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-800"
                 >
-                  Lovers Tales
+                  Abstract Expressions
                 </Link>
                 <Link
-                  href="/collections/guy-man"
+                  href="/collections/figurative-works"
                   className="block px-4 py-3 text-sm text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-800"
                 >
-                  Guy Man
+                  Figurative Works
                 </Link>
                 <Link
-                  href="/collections/adesuwa"
-                  className="block px-4 py-3 text-sm text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-800"
-                >
-                  Adesuwa
-                </Link>
-                <Link
-                  href="/collections/ancestral"
+                  href="/collections/landscape-series"
                   className="block px-4 py-3 text-sm text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-800 last:rounded-b-lg"
                 >
-                  Ancestral
+                  Landscape Series
                 </Link>
               </div>
             </div>
@@ -138,32 +132,25 @@ export function Navigation() {
                     All Collections
                   </Link>
                   <Link
-                    href="/collections/lovers-tales"
+                    href="/collections/abstract-expressions"
                     className="block text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Lovers Tales
+                    Abstract Expressions
                   </Link>
                   <Link
-                    href="/collections/guy-man"
+                    href="/collections/figurative-works"
                     className="block text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Guy Man
+                    Figurative Works
                   </Link>
                   <Link
-                    href="/collections/adesuwa"
+                    href="/collections/landscape-series"
                     className="block text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Adesuwa
-                  </Link>
-                  <Link
-                    href="/collections/ancestral"
-                    className="block text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Ancestral
+                    Landscape Series
                   </Link>
                 </div>
               </div>

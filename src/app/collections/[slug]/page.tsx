@@ -38,15 +38,16 @@ export default async function CollectionPage({ params }: PageProps) {
     <>
       <Navigation />
       <main className="glass pt-16">
-        <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6">{collection.name}</h1>
-            <p className="text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto">
-              {collection.description}
-            </p>
+            <h1 className="text-4xl sm:text-5xl text-[#372c03] font-bold mb-6">
+              {collection.name}
+            </h1>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">{collection.description}</p>
             <div className="mt-8">
-              <span className="inline-block px-4 py-2 bg-white/50 dark:bg-black/20 rounded-full text-sm font-medium">
-                {collection.artworks.length} Artworks
+              <span className="inline-block px-4 py-2 gradient-accent text-white rounded-full text-sm font-medium">
+                {collection.artworks.length}{' '}
+                {collection.artworks.length <= 1 ? 'Artwork' : 'Artworks'}
               </span>
             </div>
           </div>
