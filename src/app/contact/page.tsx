@@ -3,10 +3,10 @@
 import type { Metadata } from 'next'
 import { useState } from 'react'
 
-export const metadata: Metadata = {
-  title: 'Contact | Art Portfolio',
-  description: 'Get in touch for inquiries, commissions, or collaborations.',
-}
+// export const metadata: Metadata = {
+//   title: 'Contact | Art Portfolio',
+//   description: 'Get in touch for inquiries, commissions, or collaborations.',
+// }
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -37,26 +37,26 @@ export default function Contact() {
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold text-[#372c03] mb-6 fade-in">
             Get In Touch
           </h1>
-          <p className="text-xl text-gray-600 fade-in-delay-1">
+          <p className="text-xl text-slate-600 fade-in-delay-1">
             Let's discuss your next art project or collaboration
           </p>
         </div>
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
+      <section className="glass">
+        <div className="max-w-6xl mx-auto py-20 px-4">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
             <div className="fade-in">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Send a Message</h2>
+              <h2 className="text-3xl font-bold mb-8">Send a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2">
                       Name *
                     </label>
                     <input
@@ -66,12 +66,12 @@ export default function Contact() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                      className="w-full px-4 py-3 border border-gray-500 rounded-lg focus:ring-2 focus:ring-orange-300 focus:border-transparent transition-all duration-200"
                       placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-2">
                       Email *
                     </label>
                     <input
@@ -81,13 +81,13 @@ export default function Contact() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                      className="w-full px-4 py-3 border border-gray-500 rounded-lg focus:ring-2 focus:ring-orange-300 focus:border-transparent transition-all duration-200"
                       placeholder="your.email@example.com"
                     />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-400 mb-2">
                     Subject *
                   </label>
                   <input
@@ -97,12 +97,12 @@ export default function Contact() {
                     required
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-500 rounded-lg focus:ring-2 focus:ring-orange-300 focus:border-transparent transition-all duration-200"
                     placeholder="What's this about?"
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-2">
                     Message *
                   </label>
                   <textarea
@@ -112,13 +112,13 @@ export default function Contact() {
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
+                    className="w-full px-4 py-3 border border-gray-500 rounded-lg focus:ring-2 focus:ring-orange-300 focus:border-transparent transition-all duration-200 resize-none"
                     placeholder="Tell me about your project or inquiry..."
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                  className="w-full gradient-accent  text-white px-8 py-4 rounded-lg font-semibold  transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                 >
                   Send Message
                 </button>
@@ -127,12 +127,12 @@ export default function Contact() {
 
             {/* Contact Information */}
             <div className="fade-in-delay-1">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Contact Information</h2>
+              <h2 className="text-3xl font-bold mb-8">Contact Information</h2>
               <div className="space-y-8">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
-                      className="w-6 h-6 text-blue-600"
+                      className="w-6 h-6 text-orange-300"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -146,18 +146,18 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">info@eghoartkulture.com</p>
-                    <p className="text-sm text-gray-500 mt-1">
+                    <h3 className="text-lg font-semibold text-gray-300 mb-1">Email</h3>
+                    <p className="text-gray-400">fred@gmail.com</p>
+                    <p className="text-sm text-gray-400 mt-1">
                       I typically respond within 24 hours
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
-                      className="w-6 h-6 text-blue-600"
+                      className="w-6 h-6 text-orange-300"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -171,16 +171,16 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">+234 708 113 7270</p>
-                    <p className="text-sm text-gray-500 mt-1">Available Mon-Fri, 9AM-6PM WAT</p>
+                    <h3 className="text-lg font-semibold text-gray-300 mb-1">Phone</h3>
+                    <p className="text-gray-400">+44 082 245 7330</p>
+                    <p className="text-sm text-gray-400 mt-1">Available Mon-Sat, 9AM-6PM WAT</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
-                      className="w-6 h-6 text-blue-600"
+                      className="w-6 h-6 text-orange-300"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -200,9 +200,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Location</h3>
-                    <p className="text-gray-600">Benin City, Nigeria</p>
-                    <p className="text-sm text-gray-500 mt-1">
+                    <h3 className="text-lg font-semibold text-gray-300 mb-1">Location</h3>
+                    <p className="text-gray-400">Lagos, Nigeria</p>
+                    <p className="text-sm text-gray-400 mt-1">
                       Available for local and international projects
                     </p>
                   </div>
@@ -211,7 +211,7 @@ export default function Contact() {
 
               {/* Social Links */}
               <div className="mt-12">
-                <h3 className="text-xl font-semibold text-gray-900 mb-6">Follow My Work</h3>
+                <h3 className="text-xl font-semibold  mb-6">Follow My Work</h3>
                 <div className="flex space-x-4">
                   <a
                     href="#"

@@ -33,7 +33,7 @@ export function ArtworkCard({ artwork }: ArtworkCardProps) {
         />
       </div>
       <div className="p-3">
-        <h3 className="text-sm text-gray-400 font-medium truncate">{artwork.title}</h3>
+        <h3 className="text-sm text-gray-300 font-medium truncate">{artwork.title}</h3>
         {(artwork.year || artwork.medium) && (
           <p className="text-xs text-neutral-500 truncate">
             {[artwork.year, artwork.medium].filter(Boolean).join(' • ')}

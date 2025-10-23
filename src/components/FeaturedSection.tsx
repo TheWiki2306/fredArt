@@ -3,7 +3,7 @@ import { artworks } from '@/data/artworks'
 
 export function FeaturedSection() {
   return (
-    <section id="featured" className="py-20 gradient-other transition-smooth">
+    <section id="featured" className="py-20 glass transition-smooth">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 fade-in">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-slate-800 dark:text-slate-100">

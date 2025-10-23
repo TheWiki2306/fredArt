@@ -88,11 +88,8 @@ export function Navigation() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-lg text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden p-2 rounded-lg ">
+            <svg className="w-6 h-6 stroke-current gradient-accent" fill="none" viewBox="0 0 24 24">
               {isMenuOpen ? (
                 <path
                   strokeLinecap="round"
@@ -118,22 +115,20 @@ export function Navigation() {
             <div className="flex flex-col space-y-4">
               <Link
                 href="/"
-                className="text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
+                className="text-gray-500 hover:text-amber-950  transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/galleries"
-                className="text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
+                className="text-gray-500 hover:text-amber-950  transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Galleries
               </Link>
               <div className="space-y-2">
-                <span className="text-neutral-700 dark:text-neutral-300 font-medium">
-                  Collections
-                </span>
+                <span className="text-gray-500 hover:text-amber-950 font-medium">Collections</span>
                 <div className="ml-4 space-y-2">
                   <Link
                     href="/collections"

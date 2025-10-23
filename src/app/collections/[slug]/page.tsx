@@ -37,7 +37,7 @@ export default async function CollectionPage({ params }: PageProps) {
   return (
     <>
       <Navigation />
-      <main className="pt-16">
+      <main className="glass pt-16">
         <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-neutral-900 dark:to-neutral-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">{collection.name}</h1>
