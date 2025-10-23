@@ -16,7 +16,7 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-screen flex flex-col justify-center">
         <div className="mb-6">
           <span className="inline-block px-4 py-2 glass rounded-full text-sm font-medium mb-4 fade-in">
             Experimental Abstract Artist
