@@ -75,7 +75,7 @@ export function Navigation() {
             </Link>
             <Link
               href="/contact"
-              className="gradient-accent text-white px-4 py-2 rounded-full hover:gradient-accent-hover btn-primary transition-smooth"
+              className="gradient-accent text-white px-4 py-2 rounded-full hover-lift btn-primary transition-smooth"
             >
               Connect
             </Link>

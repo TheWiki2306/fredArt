@@ -38,7 +38,7 @@ body {
 }
 
 .gradient-accent-hover {
-  background: linear-gradient(135deg, #3f3204 0%, #675206 100%);
+  background: linear-gradient(135deg, #675206 0%, #3f3204 100%);
 }
 
 .transition-smooth {

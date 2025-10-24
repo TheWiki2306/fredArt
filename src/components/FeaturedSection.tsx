@@ -17,7 +17,7 @@ export function FeaturedSection() {
         <div className="text-center mt-12 fade-in fade-in-delay-1">
           <a
             href="/gallery"
-            className="inline-flex items-center px-8 py-3 gradient-accent text-white rounded-full font-semibold hover:gradient-accent-hover btn-primary transition-smooth shadow-lg"
+            className="inline-flex items-center px-8 py-3 gradient-accent hover-lift text-white rounded-full font-semibold hover:gradient-accent-hover btn-primary transition-smooth shadow-lg"
           >
             See All Collections
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
