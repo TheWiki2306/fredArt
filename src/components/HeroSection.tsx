@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-artistic">
+    <section className="relative sm:h-screen min-h-screen pt-30 md:mt-0 flex items-center justify-center overflow-hidden gradient-artistic">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -21,10 +21,10 @@ export function HeroSection() {
           <span className="inline-block px-4 py-2 glass rounded-full text-sm font-medium mb-4 fade-in">
             Experimental Abstract Artist
           </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 fade-in fade-in-delay-1">
+          <h1 className="text-5xl lg:text-6xl font-bold mb-4 fade-in fade-in-delay-1">
             Frederick Osarodion
           </h1>
-          <p className="text-xl text-gray-300 sm:text-2xl opacity-80 mb-8 max-w-2xl mx-auto fade-in fade-in-delay-2">
+          <p className="text-2xl text-gray-300 opacity-80 mb-8 max-w-2xl mx-auto fade-in fade-in-delay-2">
             Best of contemporary African work of art
           </p>
         </div>
